@@ -1,0 +1,26 @@
+﻿<Window x:Class="EntityFrameworkDB.WNDUpdate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntityFrameworkDB"
+        mc:Ignorable="d"
+        Title="WNDUpdate" Height="280" Width="800">
+    <DockPanel Background="DarkSlateGray">
+        <DockPanel Background="Beige" Margin="10">
+            <Label Content="Update Actor" HorizontalAlignment="Center" FontSize="20" DockPanel.Dock="Top"/>
+            <Label Content="First Name:" DockPanel.Dock="Top" FontSize="15"/>
+            <TextBox x:Name="tbFirstName" Margin="10" DockPanel.Dock="Top" FontSize="15"/>
+            <Label Content="First Name:" DockPanel.Dock="Top" FontSize="15"/>
+            <TextBox x:Name="tbLastName" Margin="10" DockPanel.Dock="Top" FontSize="15"/>
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnCancel" Content="Cancel" FontSize="20" Margin="10" Click="btnCancel_Click" Grid.Column="0"/>
+                <Button x:Name="btnUpdate" Content="Update" FontSize="20" Margin="10" Click="btnUpdate_Click"  Grid.Column="1"/>
+            </Grid>
+        </DockPanel>
+    </DockPanel>
+</Window>
